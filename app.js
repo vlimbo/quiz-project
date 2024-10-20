@@ -54,6 +54,9 @@ const updateScore = (answer) => {
   } else {
     totalScore.textContent = +totalScore.textContent + 1;
   }
+  if (currentQuestionCounter === 4) {
+    finishQuiz();
+  }
 };
 
 const updateQuestion = () => {
@@ -66,6 +69,11 @@ const resetValues = () => {
   trueBtn.style.backgroundColor = ""; // This is wicked
   falseBtn.style.backgroundColor = ""; // This is wicked
   funFactBox.style.display = "";
+};
+
+const finishQuiz = () => {
+  nextBtn.textContent = "No more questions!";
+  nextBtn.style.backgroundColor = "gray";
 };
 
 // event listeners
