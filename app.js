@@ -54,6 +54,8 @@ const updateScore = (answer) => {
   } else {
     totalScore.textContent = +totalScore.textContent + 1;
   }
+  trueBtn.disabled = true;
+  falseBtn.disabled = true;
   if (currentQuestionCounter === 4) {
     finishQuiz();
   }
@@ -68,6 +70,8 @@ const updateQuestion = () => {
 const resetValues = () => {
   trueBtn.style.backgroundColor = ""; // This is wicked
   falseBtn.style.backgroundColor = ""; // This is wicked
+  trueBtn.disabled = false;
+  falseBtn.disabled = false;
   funFactBox.style.display = "";
 };
 
