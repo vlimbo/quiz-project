@@ -1,12 +1,9 @@
 // Arrays
 const newQuestion = ["Strings in JS are editable values"];
 const questionsAnswer = ["true", "false"];
-
-// objects
-const funFacts = {
-  question1:
-    "Brendan Eich created JS at Netscape in 1995. The initial version of the language was written in just 10 days.",
-};
+const funFacts = [
+  "Brendan Eich created JS at Netscape in 1995. The initial version of the language was written in just 10 days.",
+];
 
 // variables
 let playerScore = document.querySelector(".player-score");
@@ -30,7 +27,7 @@ const checkAnswer = (answer) => {
 };
 
 const displayFact = () => {
-  funFactBox.textContent = funFacts.question1;
+  funFactBox.textContent = funFacts[0];
   funFactBox.style.display = "block";
 };
 
