@@ -1,8 +1,18 @@
 // Arrays
-const newQuestion = ["", "Strings in JS are editable values"];
-const questionsAnswer = ["true", "false"];
+const newQuestion = [
+  "",
+  "Strings in JS are editable values",
+  "1 + 1 === 2",
+  "'1' + '1' === '2'",
+  "typeof ['J','S'] === 'array'",
+];
+const questionsAnswer = ["true", "false", "true", "false", "false"];
 const funFacts = [
   "Brendan Eich created JS at Netscape in 1995. The initial version of the language was written in just 10 days.",
+  "In JavaScript strings are immutable values, meaning they cannot be edited; however, they can be replaced with new, different strings",
+  "the plus operator gives the sum of two numbers",
+  "The plus operator concatenates strings, '1' + '1' becomes '11'",
+  "Arrays are type object, not arrays",
 ];
 
 // variables
