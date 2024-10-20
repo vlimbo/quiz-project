@@ -22,7 +22,7 @@ const checkAnswer = (answer) => {
     updateScore("correct");
   } else {
     answer.style.background = "lightpink";
-    updateScore();
+    updateScore("not correct");
   }
   displayFact();
 };
@@ -32,7 +32,7 @@ const displayFact = () => {
   funFactBox.style.display = "block";
 };
 
-const updateScore = (answer = "not correct") => {
+const updateScore = (answer) => {
   if (answer === "correct") {
     playerScore.textContent = +playerScore.textContent + 1;
     totalScore.textContent = +totalScore.textContent + 1;
