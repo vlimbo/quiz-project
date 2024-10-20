@@ -6,9 +6,10 @@ const funFacts = [
 ];
 
 // variables
+let currentQuestionCounter = 0;
+let currentQuestion = document.querySelector(".main__question");
 let playerScore = document.querySelector(".player-score");
 let totalScore = document.querySelector(".total-score");
-let currentQuestion = document.querySelector(".main__question");
 const trueBtn = document.querySelector(".main__btn-true");
 const falseBtn = document.querySelector(".main__btn-false");
 let funFactBox = document.querySelector(".main__fun-fact");
@@ -16,7 +17,7 @@ const nextBtn = document.querySelector(".main__btn-next");
 
 // functions
 const checkAnswer = (answer) => {
-  if (answer.textContent === questionsAnswer[0]) {
+  if (answer.textContent === questionsAnswer[currentQuestionCounter]) {
     trueBtn.style.background = "lightgreen";
     updateScore("correct");
   } else {
@@ -27,7 +28,7 @@ const checkAnswer = (answer) => {
 };
 
 const displayFact = () => {
-  funFactBox.textContent = funFacts[0];
+  funFactBox.textContent = funFacts[currentQuestionCounter];
   funFactBox.style.display = "block";
 };
 
