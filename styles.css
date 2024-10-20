@@ -50,6 +50,10 @@
   margin: 0;
 }
 
+.main__fun-fact {
+  display: none;
+}
+
 /* utility class */
 .btn {
   width: 100%;
