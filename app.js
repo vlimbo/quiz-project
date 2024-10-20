@@ -56,7 +56,7 @@ const updateScore = (answer) => {
   }
   trueBtn.disabled = true;
   falseBtn.disabled = true;
-  if (currentQuestionCounter === 4) {
+  if (currentQuestionCounter === questionsAnswer.length - 1) {
     finishQuiz();
   }
 };
