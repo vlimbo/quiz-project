@@ -74,6 +74,7 @@ const resetValues = () => {
 const finishQuiz = () => {
   nextBtn.textContent = "No more questions!";
   nextBtn.style.backgroundColor = "gray";
+  nextBtn.disabled = true;
 };
 
 // event listeners
