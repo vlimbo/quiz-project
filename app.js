@@ -3,7 +3,7 @@ const questions = {
   question1: "true",
 };
 
-const funfacts = {
+const funFacts = {
   question1:
     "Brendan Eich created JS at Netscape in 1995. The initial version of the language was written in just 10 days.",
 };
@@ -26,9 +26,13 @@ const checkAnswer = (answer) => {
     answer.style.background = "lightpink";
     updateScore();
   }
+  displayFact();
 };
 
-const displayFact = () => {};
+const displayFact = () => {
+  funFactBox.textContent = funFacts.question1;
+  funFactBox.style.display = "block";
+};
 
 const updateScore = (answer = "no") => {
   if (answer === "correct") {

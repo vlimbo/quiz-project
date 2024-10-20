@@ -52,13 +52,16 @@
 
 .main__fun-fact {
   display: none;
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 65ch;
+  margin: 0.5rem auto;
 }
 
 /* utility class */
 .btn {
   width: 100%;
   padding: 1rem 0;
-  margin-top: 10px;
   font-size: 1.5rem;
   display: block;
   cursor: pointer;
