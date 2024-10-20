@@ -47,7 +47,14 @@ const updateScore = (answer) => {
 
 const updateQuestion = () => {
   currentQuestionCounter++;
+  resetValues();
   currentQuestion.textContent = newQuestion[currentQuestionCounter];
+};
+
+const resetValues = () => {
+  trueBtn.style.backgroundColor = ""; // This is wicked
+  falseBtn.style.backgroundColor = ""; // This is wicked
+  funFactBox.style.display = "";
 };
 
 // event listeners

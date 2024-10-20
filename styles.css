@@ -62,8 +62,14 @@
 .btn {
   width: 100%;
   padding: 1rem 0;
+  border: 1px solid #000;
   font-size: 1.5rem;
+  background-color: #d3d3d3;
   display: block;
   cursor: pointer;
   color: inherit;
+}
+
+.btn:hover {
+  background-color: #868686;
 }
