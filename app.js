@@ -23,6 +23,7 @@ const checkAnswer = (answer) => {
       updateScore("correct");
     } else {
       falseBtn.style.background = "lightgreen";
+      updateScore("correct");
     }
   } else {
     answer.style.background = "lightpink";

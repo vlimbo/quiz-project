@@ -68,6 +68,7 @@
   display: block;
   cursor: pointer;
   color: inherit;
+  margin-top: 1rem;
 }
 
 .btn:hover {
