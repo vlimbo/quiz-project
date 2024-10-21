@@ -24,8 +24,7 @@ const disableBtns = (btn) => {
 };
 
 const isCorrect = (guess) => {
-  guess === fact.answer ? "correct" : "incorrect";
-  console.log("Working");
+  return guess === fact.answer;
 };
 
 // real-time display
