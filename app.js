@@ -15,4 +15,20 @@ const displayStatement = () => {
   statement.textContent = fact.statement;
 };
 
+const enableBtns = () => {
+  buttons[0].disabled = "false";
+  buttons[1].disabled = "false";
+};
+
+const disableBtns = () => {
+  buttons[0].disabled = "true";
+  buttons[1].disabled = "true";
+};
+
+const isCorrect = (guess) => {};
+
+// real-time display
 displayStatement();
+
+// event listeners
+buttons[0].addEventListener("click", isCorrect);
