@@ -8,4 +8,10 @@ const facts = {
   StringsAreMutuable: false,
 };
 
-console.log(facts.StringsAreMutuable);
+// functions
+const displayFact = () => {
+  statement.textContent = "This is a very fun fact";
+};
+
+// event listeners
+trueBtn.addEventListener("click", displayFact);
