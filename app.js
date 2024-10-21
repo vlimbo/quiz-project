@@ -15,23 +15,22 @@ const displayStatement = () => {
   statement.textContent = fact.statement;
 };
 
-const enableBtns = () => {
-  buttons[0].disabled = "false";
-  buttons[1].disabled = "false";
+const enableBtns = (btn) => {
+  btn.disabled = false;
 };
 
-const disableBtns = () => {
-  buttons[0].disabled = "true";
-  buttons[1].disabled = "true";
+const disableBtns = (btn) => {
+  btn.disabled = true;
 };
 
 const isCorrect = (guess) => {
   guess === fact.answer ? "correct" : "incorrect";
+  console.log("Working");
 };
 
 // real-time display
 displayStatement();
 
 // event listeners
-buttons[0].addEventListener("click", () => isCorrect(true));
+buttons[0].addEventListener("click", () => isCorrect(true)); // This still amazes me
 buttons[1].addEventListener("click", () => isCorrect(false));
