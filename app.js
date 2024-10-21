@@ -25,10 +25,13 @@ const disableBtns = () => {
   buttons[1].disabled = "true";
 };
 
-const isCorrect = (guess) => {};
+const isCorrect = (guess) => {
+  guess === fact.answer ? "correct" : "incorrect";
+};
 
 // real-time display
 displayStatement();
 
 // event listeners
-buttons[0].addEventListener("click", isCorrect);
+buttons[0].addEventListener("click", () => isCorrect(true));
+buttons[1].addEventListener("click", () => isCorrect(false));
