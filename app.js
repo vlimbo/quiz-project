@@ -24,6 +24,7 @@ const disableBtns = (btn) => {
 };
 
 const isCorrect = (guess) => {
+  console.log("clicked");
   return guess === fact.answer;
 };
 
@@ -32,4 +33,4 @@ displayStatement();
 
 // event listeners
 buttons[0].addEventListener("click", () => isCorrect(true)); // This still amazes me
-buttons[1].addEventListener("click", () => isCorrect(false));
+buttons[1].addEventListener("click", () => isCorrect(false)); // Also still amazes me
