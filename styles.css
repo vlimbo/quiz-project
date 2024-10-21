@@ -50,6 +50,12 @@
   margin: 0;
 }
 
+.main__fun-fact {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 /* utility class */
 .btn {
   width: 100%;
