@@ -1,7 +1,6 @@
 // variables
 statement = document.querySelector(".main__fun-fact");
-trueBtn = document.querySelector(".main__btn-true");
-falseBtn = document.querySelector(".main__btn-false");
+buttons = document.querySelector(".main__btn-container").children;
 
 // objects
 const facts = {
@@ -12,6 +11,3 @@ const facts = {
 const displayFact = () => {
   statement.textContent = "This is a very fun fact";
 };
-
-// event listeners
-trueBtn.addEventListener("click", displayFact);
