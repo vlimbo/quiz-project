@@ -1,13 +1,18 @@
 // variables
-statement = document.querySelector(".main__fun-fact");
+statement = document.querySelector(".main__question");
 buttons = document.querySelector(".main__btn-container").children;
+explanation = document.querySelector(".main__fun-fact");
 
 // objects
-const facts = {
-  StringsAreMutuable: false,
+const fact = {
+  statement: "Strings are mutuable datatypes",
+  answer: false,
+  explanation: "Strings are immutable, meaning they cannot be changed",
 };
 
 // functions
-const displayFact = () => {
-  statement.textContent = "This is a very fun fact";
+const displayStatement = () => {
+  statement.textContent = fact.statement;
 };
+
+displayStatement();
